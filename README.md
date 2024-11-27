@@ -1,2 +1,4 @@
 # Routing-Table-simulation-using-containers
 To bring up Opensource Routing stack in Linux containers and share the routing table information among the containers.
+
+The task involves using a base image of Linux (Ubuntu) to bring up 2 Linux (Ubuntu) containers, and running an open-source routing software BIRD stack within these containers. Each container will have network interfaces configured to send and receive traffic through the physical network interfaces of the base Linux system. Peer Linux machines will be used to exchange routing protocol information between the containers and external systems. Additionally, a shared routing table is created, accessible by all containers, using open-source database or message servers like Redis. Finally, a virtual interface is set up between the containers, enabling packets from one container to be sent to another via the virtual interface.
